@@ -9,6 +9,7 @@ function App() {
       <div>
         <Navigation />
         <Routes>
+          <Route path="/dragons" />
           <Route />
           <Route />
           <Route />
