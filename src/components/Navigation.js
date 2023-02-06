@@ -4,11 +4,11 @@ import icon from '../images/planet.png';
 
 const Navigation = () => (
   <nav className="d-flex justify-content-between nav-head px-5 mt-3">
-    <div  className="d-flex align-middle gap-3">
-      <img src={icon} alt="logo"/>
+    <div className="d-flex align-middle gap-3">
+      <img src={icon} alt="logo" />
       <h3 className="mt-2">Space Travelers Hub</h3>
     </div>
-    <ul  className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
+    <ul className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
       <li>
         <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Rockets</NavLink>
       </li>
