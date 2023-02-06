@@ -11,9 +11,10 @@ const FETCH_DRAGON_DATA = 'dragons/getDragonsData';
 const getDragonData = createAsyncThunk(FETCH_DRAGON_DATA, async () => {
   try {
     const response = await axios.get('https://api.spacexdata.com/v3/dragons');
-    response.data.forEach((data) =>
-      //   console.log(data);
-      data);
+    // response.data.forEach((data) => {
+    //   //   console.log(data);
+    // });
+    return response.data;
   } catch (error) {
     // console.log(error);
     return error;
