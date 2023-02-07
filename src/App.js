@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
+import Rockets from './components/Rockets';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <div>
         <Navigation />
         <Routes>
-          <Route />
+          <Route path="/" element={<Rockets />} />
           <Route />
           <Route />
           <Route />
