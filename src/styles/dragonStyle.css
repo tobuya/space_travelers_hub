@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-dragons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.a-dragon {
+  display: flex;
+  gap: 20px;
+}
+
+.dragons-img {
+  width: 400px;
+  height: 300px;
+}
+
+#btn {
+  padding: 10px 20px;
+  background: #0063f9;
+  color: #fff;
+}
