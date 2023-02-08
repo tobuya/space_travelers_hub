@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import {
   bookADragon,
   cancelADragonBooking,
-} from '../redux/dragons/dragonSlice';
+} from '../redux/dragons/DragonSlice';
 import '../styles/dragonStyle.css';
 
 function DragonsCreator(props) {
