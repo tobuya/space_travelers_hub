@@ -41,7 +41,6 @@ const Navigation = () => (
         >
           My Profile
         </NavLink>
-
       </li>
     </ul>
   </nav>
