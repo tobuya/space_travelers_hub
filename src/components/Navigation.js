@@ -10,17 +10,38 @@ const Navigation = () => (
     </div>
     <ul className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
       <li>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Rockets</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Rockets
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/missions" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Missions</NavLink>
+        <NavLink
+          to="/missions"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Missions
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/dragons" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Dragons</NavLink>
+        <NavLink
+          to="/dragons"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Dragons
+        </NavLink>
       </li>
       |
       <li>
-        <NavLink to="/my_profile" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>My Profile</NavLink>
+        <NavLink
+          to="/my_profile"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          My Profile
+        </NavLink>
+
       </li>
     </ul>
   </nav>
