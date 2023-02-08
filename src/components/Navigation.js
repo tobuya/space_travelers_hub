@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import icon from '../images/planet.png';
 
 const Navigation = () => (
-  <nav className="d-flex justify-content-between nav-head px-5 mt-3">
+  <nav className="d-flex justify-content-between border-bottom nav-head px-5 mt-3">
     <div className="d-flex align-middle gap-3">
       <img src={icon} alt="logo" />
       <h3 className="mt-2">Space Travelers Hub</h3>

@@ -1,34 +1,33 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const ADD_ROCKETS = 'rockets/ROCKETS';
+const RocketsAPI = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = [];
+const ADD_ROCKETS = 'rockets/ROCKETS';
 
-export const addedRockets = () => async (dispatch) => {
-  const respons = await axios.get('https://api.spacexdata.com/v4/rockets');
-  const rocketsData = [];
-  respons.data.forEach((rockets) => {
-    rocketsData.push({
+const addedRockets = createAsyncThunk(
+  ADD_ROCKETS,
+  async () => {
+    const response = await axios.get(RocketsAPI);
+    const rocket = response.data.map((rockets) => ({
       id: rockets.id,
-      rocket_name: rockets.rocket_name,
+      rocketName: rockets.name,
       description: rockets.description,
-      flickr_images: rockets.flickr_images,
-    });
-  });
+      flickrImages: rockets.flickr_images,
+    }));
+    return rocket;
+  },
+);
 
-  dispatch({
-    type: ADD_ROCKETS,
-    payload: rocketsData,
-  });
-};
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_ROCKETS:
-      return [...state, action.payload];
-
+    case `${ADD_ROCKETS}/fulfilled`:
+      return [...state, ...action.payload];
     default:
       return state;
   }
 };
 
+export { addedRockets };
 export default rocketReducer;
