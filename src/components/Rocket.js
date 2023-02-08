@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { toggleRockets } from '../Redux/Rockets/Rockets';
 
 const Rocket = ({ rocket }) => {
+  const dispatch = useDispatch();
   const {
-    rocketName, description, flickrImages,
+    rocketName, description, flickrImages, reserved, id,
   } = rocket;
   return (
     <div className="d-flex py-3 px-5 height gap-5">
@@ -13,7 +16,14 @@ const Rocket = ({ rocket }) => {
         <p>
           {description}
         </p>
-        <button type="button" className="btn btn-primary mb-2">Resrve Rocket</button>
+        {
+            reserved ? (
+              <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => { dispatch(toggleRockets(id)); }}>Cancel Reservation</button>
+            )
+              : (
+                <button type="button" className="btn btn-danger mb-2" onClick={() => { dispatch(toggleRockets(id)); }}>Reserve Rocket</button>
+              )
+          }
       </div>
     </div>
   );
@@ -23,7 +33,9 @@ Rocket.propTypes = {
   rocket: PropTypes.shape({
     rocketName: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    flickrImages: PropTypes.isRequired,
+    flickrImages: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
 export default Rocket;
