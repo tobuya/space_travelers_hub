@@ -13,8 +13,8 @@ function App() {
       <Provider store={store}>
         <Navigation />
         <Routes>
-          <Route />
-          <Route />
+          <Route path="/" element={<Rockets />} />
+          <Route path="/missions" element={<Missions />} />
           <Route path="/dragons" element={<Dragon />} />
           <Route />
         </Routes>
