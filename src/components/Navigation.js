@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import icon from '../images/planet.png';
 
 const Navigation = () => (
@@ -10,39 +10,37 @@ const Navigation = () => (
     </div>
     <ul className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
       <li>
-        <Link
-          to="/dragons"
-          exact="true"
-          // className={({ isActive }) => (isActive ? "active" : "inactive")}
-        >
-          Dragon
-        </Link>
-      </li>
-      <li>
-        <Link
+        <NavLink
           to="/"
-          exact="true"
-          // className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
         >
           Rockets
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/missions"
-          // className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
         >
           Missions
-        </Link>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/dragons"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Dragons
+        </NavLink>
       </li>
       |
       <li>
-        <Link
+        <NavLink
           to="/my_profile"
-          // className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
         >
           My Profile
-        </Link>
+        </NavLink>
       </li>
     </ul>
   </nav>
