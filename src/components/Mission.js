@@ -1,38 +1,48 @@
 import { MDBBtn } from 'mdb-react-ui-kit';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { toggleMissionReserveState } from '../Redux/Missions/missions';
 
 const Mission = ({ mission }) => {
   const {
-    name, description, membership,
+    id, name, description, reserved,
   } = mission;
+
+  const dispatch = useDispatch();
+
+  const toggleReservation = () => {
+    dispatch(toggleMissionReserveState(id));
+  };
 
   return (
     <tr>
       <td className="fw-bold align-top">{name}</td>
       <td>{description}</td>
       <td>
-        {membership ? (
+        {reserved ? (
           <MDBBtn className="text-nowrap" size="sm" disabled>Active Member</MDBBtn>
         ) : (
           <MDBBtn className="text-nowrap" color="dark" size="sm" disabled>NOT A MEMBER</MDBBtn>
         )}
       </td>
       <td>
-        {membership ? (
-          <MDBBtn className="text-nowrap" outline color="danger">Leave Mission</MDBBtn>
+        {reserved ? (
+          <button type="button" className="btn btn-outline-danger text-nowrap" onClick={toggleReservation}>Leave Mission</button>
         ) : (
-          <MDBBtn className="text-nowrap" outline color="dark">Join Mission</MDBBtn>
+          <button type="button" className="btn btn-outline-dark text-nowrap" onClick={toggleReservation}>Join Mission</button>
         )}
       </td>
     </tr>
   );
 };
 
+// An object taking on a particular shape
 Mission.propTypes = {
   mission: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    membership: PropTypes.bool.isRequired,
+    reserved: PropTypes.bool.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
 
