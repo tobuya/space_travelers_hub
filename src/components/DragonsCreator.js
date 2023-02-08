@@ -30,8 +30,7 @@ function DragonsCreator(props) {
         {reserved ? (
           <button
             type="button"
-            className="rev-btn"
-            id="rev-btn"
+            className="btn btn-danger"
             onClick={() => theDispatch(cancelADragonBooking(id))}
           >
             Cancel Reservation
@@ -39,8 +38,7 @@ function DragonsCreator(props) {
         ) : (
           <button
             type="button"
-            className="btn"
-            id="btn"
+            className="btn btn-primary"
             onClick={() => theDispatch(bookADragon(id))}
           >
             Reserve Dragon
