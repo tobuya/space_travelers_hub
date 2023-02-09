@@ -27,7 +27,7 @@ const Rocket = ({ rocket }) => {
               <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => { dispatch(toggleRockets(id)); }}>Cancel Reservation</button>
             )
               : (
-                <button type="button" className="btn btn-danger mb-2" onClick={() => { dispatch(toggleRockets(id)); }}>Reserve Rocket</button>
+                <button type="button" className="btn btn-primary mb-2" onClick={() => { dispatch(toggleRockets(id)); }}>Reserve Rocket</button>
               )
           }
       </div>
