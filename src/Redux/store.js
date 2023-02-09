@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import missionsReducer from './Missions/missions';
-import dragonSlice from './dragons/dragonSlice';
+import dragonSlice from './dragons/DragonSlice';
 import rocketReducer from './Rockets/Rockets';
 
 const store = configureStore({
