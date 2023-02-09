@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -11,7 +12,6 @@ const fetchMissions = createAsyncThunk(
   FETCHED_MISSIONS,
   async () => {
     const { data } = await axios.get(missionsAPI);
-    // eslint-disable-next-line camelcase
     const missions = data.map(({ mission_name, mission_id, description }) => ({
       name: mission_name,
       id: mission_id,

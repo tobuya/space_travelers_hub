@@ -16,7 +16,7 @@ const addedRockets = createAsyncThunk(
       rocketName: rockets.name,
       description: rockets.description,
       flickrImages: rockets.flickr_images,
-      reserved: true,
+      reserved: false,
     }));
     return rocket;
   },
