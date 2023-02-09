@@ -14,6 +14,12 @@ const Rocket = ({ rocket }) => {
       <div className="w-75 gap-2">
         <h2>{rocketName}</h2>
         <p>
+          {
+            reserved ? (
+              <span className="btn btn-info btn-sm mx-2 h-1">Reserved</span>
+            )
+              : ('')
+          }
           {description}
         </p>
         {
