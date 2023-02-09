@@ -4,14 +4,16 @@ import { useSelector } from 'react-redux';
 const MyProfile = () => {
   const rockets = useSelector((state) => state.rocket);
   const missions = useSelector((state) => state.missions);
-
+  const dragons = useSelector((state) => state.dragons.dragons);
   return (
     <>
       <div className="d-flex">
         <table className="table w-50 m-5">
           <thead>
             <tr>
-              <th><h3>My Missions</h3></th>
+              <th>
+                <h3>My Missions</h3>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -28,7 +30,9 @@ const MyProfile = () => {
         <table className="table w-50 m-5">
           <thead>
             <tr>
-              <th><h3>My Rockets</h3></th>
+              <th>
+                <h3>My Rockets</h3>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -37,6 +41,24 @@ const MyProfile = () => {
               .map((rocket) => (
                 <tr key={rocket.id} className="border">
                   <p className="m-2">{rocket.rocketName}</p>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+        <table className="table w-50 m-5">
+          <thead>
+            <tr>
+              <th>
+                <h3>My Dradons</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {dragons
+              .filter((dragons) => dragons.reserved)
+              .map((dragons) => (
+                <tr key={dragons.id} className="border">
+                  <p className="m-2">{dragons.dragonName}</p>
                 </tr>
               ))}
           </tbody>
