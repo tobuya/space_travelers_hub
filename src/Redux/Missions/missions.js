@@ -10,12 +10,12 @@ const TOGGLED_MISSION_STATE = 'space_travelers_hub/missions/TOGGLED_MISSIONS_STA
 const fetchMissions = createAsyncThunk(
   FETCHED_MISSIONS,
   async () => {
-    const response = await axios.get(missionsAPI);
-    const { data } = response;
-    const missions = data.map((mission) => ({
-      name: mission.mission_name,
-      id: mission.mission_id,
-      description: mission.description,
+    const { data } = await axios.get(missionsAPI);
+    // eslint-disable-next-line camelcase
+    const missions = data.map(({ mission_name, mission_id, description }) => ({
+      name: mission_name,
+      id: mission_id,
+      description,
       reserved: false,
     }));
     return missions;
@@ -27,10 +27,9 @@ const missionsReducer = (state = initialState, action) => {
     case `${FETCHED_MISSIONS}/fulfilled`:
       return [...state, ...action.payload];
     case TOGGLED_MISSION_STATE: {
-      return state.map((mission) => {
-        if (mission.id === action.payload) return { ...mission, reserved: !mission.reserved };
-        return mission;
-      });
+      return state.map((mission) => (mission.id === action.payload
+        ? { ...mission, reserved: !mission.reserved }
+        : mission));
     }
     default:
       return state;
