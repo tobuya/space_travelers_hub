@@ -1,12 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import {
+  bookADragon,
+  cancelADragonBooking,
+} from '../Redux/dragons/dragonSlice';
 import '../styles/dragonStyle.css';
 
 function DragonsCreator(props) {
   const { dragons } = props;
   const {
-    id, dragonName, description, flickrImages,
+    id, dragonName, description, flickrImages, reserved,
   } = dragons;
+
+  const theDispatch = useDispatch();
 
   return (
     <div id={id} className="a-dragon">
@@ -16,13 +23,27 @@ function DragonsCreator(props) {
       <div>
         <h2>{dragonName}</h2>
         <p>
-          {' '}
+          {reserved ? <span className="res-badge"> Reserved </span> : null}
           {description}
           {' '}
         </p>
-        <button type="button" className="btn" id="btn">
-          Reserve Dragon
-        </button>
+        {reserved ? (
+          <button
+            type="button"
+            className="btn btn-danger"
+            onClick={() => theDispatch(cancelADragonBooking(id))}
+          >
+            Cancel Reservation
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => theDispatch(bookADragon(id))}
+          >
+            Reserve Dragon
+          </button>
+        )}
       </div>
     </div>
   );

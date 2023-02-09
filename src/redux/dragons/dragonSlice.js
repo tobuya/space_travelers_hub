@@ -39,6 +39,26 @@ export const getDragonData = createAsyncThunk(FETCH_DRAGON_DATA, async () => {
 const dragonSlice = createSlice({
   name: 'dragons',
   initialState,
+  reducers: {
+    bookADragon: (state, action) => ({
+      ...state,
+      dragons: state.dragons.map((dragons) => {
+        if (dragons.id !== action.payload) {
+          return dragons;
+        }
+        return { ...dragons, reserved: true };
+      }),
+    }),
+    cancelADragonBooking: (state, action) => ({
+      ...state,
+      dragons: state.dragons.map((dragons) => {
+        if (dragons.id !== action.payload) {
+          return dragons;
+        }
+        return { ...dragons, reserved: false };
+      }),
+    }),
+  },
   extraReducers: {
     [getDragonData.fulfilled]: (state, action) => ({
       ...state,
@@ -56,4 +76,5 @@ const dragonSlice = createSlice({
   },
 });
 
+export const { bookADragon, cancelADragonBooking } = dragonSlice.actions;
 export default dragonSlice.reducer;
