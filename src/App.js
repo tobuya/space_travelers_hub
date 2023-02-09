@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
 import MyProfile from './pages/MyProfile';
-import Dragon from './components/Dragons';
+import Dragon from './pages/Dragons';
 
 function App() {
   return (
