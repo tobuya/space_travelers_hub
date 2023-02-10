@@ -49,7 +49,7 @@ const MyProfile = () => {
           <thead>
             <tr>
               <th>
-                <h3>My Dradons</h3>
+                <h3>My Dragons</h3>
               </th>
             </tr>
           </thead>
