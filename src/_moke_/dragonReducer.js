@@ -16,20 +16,6 @@ export default class DragonTest {
           description: 'Never give up on your dream',
           reserved: false,
         },
-        {
-          id: 3,
-          flickrImage: 'images',
-          dragonName: 'Falcon Heavy',
-          description: 'Nobody else will do it for you',
-          reserved: false,
-        },
-        {
-          id: 4,
-          flickrImage: 'images',
-          dragonName: 'Starship',
-          description: 'easy taske done today',
-          reserved: false,
-        },
       ],
     };
     return response.data;

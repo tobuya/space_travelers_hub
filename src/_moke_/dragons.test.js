@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../Redux/store';
 import Dragon from '../pages/Dragons';
+import DragonsCreator from '../components/DragonsCreator';
 import DragonTest from './dragonReducer';
 
-const dragon = {
+const dragons = {
   dragonName: 'Heloo',
   description: 'Heloof',
   flickrImages: 'Helookn',
@@ -20,11 +21,11 @@ describe('dragon must pass the test', () => {
     expect(DragonTest.addedRockets()).toBeDefined();
   });
   test('added dragon return value length must be 3', () => {
-    expect(DragonTest.addedRockets()).toHaveLength(4);
+    expect(DragonTest.addedRockets()).toHaveLength(2);
   });
   test('added dragon must return name t', () => {
-    expect(DragonTest.addedRockets()[3].description).toBe(
-      'easy taske done today',
+    expect(DragonTest.addedRockets()[1].description).toBe(
+      'Never give up on your dream',
     );
   });
 });
@@ -47,7 +48,7 @@ describe('Dragon component', () => {
       .create(
         <Provider store={store}>
           <BrowserRouter>
-            <Dragon rocket={dragon} />
+            <DragonsCreator dragons={dragons} />
           </BrowserRouter>
         </Provider>,
       )
