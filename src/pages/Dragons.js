@@ -9,8 +9,8 @@ const Dragon = () => {
   const theDispatch = useDispatch();
 
   useEffect(() => {
-    theDispatch(getDragonData());
-  }, [theDispatch]);
+    if (dragons.length === 0) theDispatch(getDragonData());
+  }, [theDispatch, dragons.length]);
   return (
     <div className="all-dragons">
       {dragons.map((dragons) => (
