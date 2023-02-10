@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets component renders Rocket component 1`] = `
+<div
+  className="d-flex py-3 px-5 height gap-5"
+>
+  <img
+    alt="rockets img"
+    className="w-25 h "
+    src="Helookn"
+  />
+  <div
+    className="w-75 gap-2"
+  >
+    <h2>
+      Heloo
+    </h2>
+    <p>
+      Heloof
+    </p>
+    <button
+      className="btn btn-primary mb-2"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Rockets component renders Rockets component 1`] = `
+<div
+  className="mt-3"
+/>
+`;
