@@ -162,7 +162,7 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 - GitHub: [Outkarm](https://github.com/Outkarm)
 - GitHub: [Outkarm](https://github.com/Outkarm)
-- LinkedIn: [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/john-kpordje-866749241/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
