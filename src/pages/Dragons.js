@@ -4,7 +4,7 @@ import { getDragonData } from '../Redux/Dragons/dragonSlice';
 import DragonsCreator from '../components/DragonsCreator';
 import '../styles/dragonStyle.css';
 
-const Dragon = () => {
+const Dragons = () => {
   const dragons = useSelector((state) => state.dragons.dragons);
   const theDispatch = useDispatch();
 
@@ -20,4 +20,4 @@ const Dragon = () => {
   );
 };
 
-export default Dragon;
+export default Dragons;

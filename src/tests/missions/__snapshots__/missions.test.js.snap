@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions Should render a single mission 1`] = `undefined`;
+
+exports[`Missions Should render the Missions page correctly 1`] = `undefined`;
