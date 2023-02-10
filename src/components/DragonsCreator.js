@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import {
   bookADragon,
   cancelADragonBooking,
@@ -48,5 +48,15 @@ function DragonsCreator(props) {
     </div>
   );
 }
+
+DragonsCreator.propTypes = {
+  dragons: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    dragonName: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    flickrImages: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 export default DragonsCreator;
