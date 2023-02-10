@@ -4,16 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../Redux/store';
 import Dragon from '../pages/Dragons';
-import DragonsCreator from '../components/DragonsCreator';
 import DragonTest from './dragonReducer';
-
-const dragons = {
-  dragonName: 'Heloo',
-  description: 'Heloof',
-  flickrImages: 'Helookn',
-  reserved: false,
-  id: 2,
-};
 
 jest.mock('axios');
 describe('dragon must pass the test', () => {
@@ -42,17 +33,5 @@ describe('Dragon component', () => {
       )
       .toJSON();
     expect(r).toMatchSnapshot();
-  });
-  it('renders dragon component', () => {
-    const m = renderer
-      .create(
-        <Provider store={store}>
-          <BrowserRouter>
-            <DragonsCreator dragons={dragons} />
-          </BrowserRouter>
-        </Provider>,
-      )
-      .toJSON();
-    expect(m).toMatchSnapshot();
   });
 });

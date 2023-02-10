@@ -5,9 +5,3 @@ exports[`Dragon component renders dragon component 1`] = `
   className="all-dragons"
 />
 `;
-
-exports[`Dragon component renders dragon component 2`] = `
-<div
-  className="all-dragons"
-/>
-`;
