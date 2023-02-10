@@ -3,10 +3,10 @@ import { render, cleanup } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from '../../components/Navigation';
 
-describe('Navbar Component', () => {
+describe('Navigation Component', () => {
   afterEach(cleanup);
 
-  test('Renders the Navbar component', () => {
+  test('Renders the Navigation component', () => {
     const { getByText } = render(
       <Router>
         <Navigation />
@@ -16,12 +16,12 @@ describe('Navbar Component', () => {
     expect(linkElement).toBeInTheDocument();
   });
 
-  test('Builds the snapshot of the Navbar component', () => {
-    const navbar = render(
+  test('Builds the snapshot of the Navigation component', () => {
+    const navigation = render(
       <Router>
         <Navigation />
       </Router>,
     );
-    expect(navbar).toMatchSnapshot();
+    expect(navigation).toMatchSnapshot();
   });
 });
