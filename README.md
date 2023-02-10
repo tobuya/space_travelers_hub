@@ -66,16 +66,14 @@
 
 - **Book rockets**
 - **Join selected space missions**
+- **Join selected space dragons**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### 🔭 Future Features <a name="future-features"></a>
 
-- **Book rockets**
-- **Join selected space missions**
-- **My profile section**
-- **Add a link to a live version**
-- **Add a link to a video representation of the project**
+- **Mobile version**
+- **Toggle modes according to times of the day**
 
 <!-- LIVE DEMO -->
 
@@ -90,9 +88,6 @@
 - <a href="#" target="_blank"> [Video Project Presentation Link](https://drive.google.com/file/d/1Ml2lHgZOSuCdUDgAh8o17QyBNclcId0r/view?usp=sharing) </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <!-- GETTING STARTED -->
 
@@ -155,16 +150,15 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 - GitHub: [@githubhandle](https://github.com/tobuya)
 - Twitter: [@twitterhandle](https://twitter.com/@MullerTheGreat1)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/thomas-obuya-51b49719b/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/tobuya/)
 
 👤 **Bernabas Yosef**
 
 - GitHub: [@githubhandle](https://github.com/bernabasy)
 - Twitter: [@twitterhandle](https://twitter.com/@bernabasjosef)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabasjosef/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabas-yosef-74b571186)
 
-👤 *Authors*
-Outkarm Johnson
+👤 **Outkarm Johnson**
 
 - GitHub: [Outkarm](https://github.com/Outkarm)
 - GitHub: [Outkarm](https://github.com/Outkarm)
