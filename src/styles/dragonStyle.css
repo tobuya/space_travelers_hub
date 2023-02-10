@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-dragons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.a-dragon {
+  display: flex;
+  gap: 20px;
+}
+
+.dragons-img {
+  width: 400px;
+  height: 300px;
+}
+
+.res-badge {
+  padding: 5px 2px;
+  margin: 3px;
+  background-color: chartreuse;
+  color: blueviolet;
+  border-radius: 8px;
+  text-align: center;
+}
