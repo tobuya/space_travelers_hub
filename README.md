@@ -161,7 +161,7 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 - GitHub: [@githubhandle](https://github.com/bernabasy)
 - Twitter: [@twitterhandle](https://twitter.com/@bernabasjosef)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabas-yosef-74b571186)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabasjosef/)
 
 👤 *Authors*
 Outkarm Johnson
