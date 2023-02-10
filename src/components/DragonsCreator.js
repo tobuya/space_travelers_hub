@@ -48,15 +48,11 @@ function DragonsCreator(props) {
     </div>
   );
 }
-
 DragonsCreator.propTypes = {
-  dragons: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    dragonName: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    flickrImages: PropTypes.string.isRequired,
-    reserved: PropTypes.bool.isRequired,
-  }).isRequired,
+  id: PropTypes.string.isRequired,
+  dragonName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  flickrImages: PropTypes.string.isRequired,
+  dragons: PropTypes.string.isRequired,
 };
-
 export default DragonsCreator;
