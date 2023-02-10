@@ -65,14 +65,6 @@ const dragonSlice = createSlice({
       dragons: action.payload,
       isLoading: false,
     }),
-    // [getDragonData.rejected]: (state) => ({
-    //   ...state,
-    //   isLoading: false,
-    // }),
-    // [getDragonData.pending]: (state) => ({
-    //   ...state,
-    //   isLoading: true,
-    // }),
   },
 });
 

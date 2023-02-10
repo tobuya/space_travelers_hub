@@ -50,11 +50,3 @@ function DragonsCreator(props) {
 }
 
 export default DragonsCreator;
-
-// DragonsCreator.propTypes = {
-//   id: propTypes.string.isRequired,
-//   dragonName: propTypes.string.isRequired,
-//   description: propTypes.string.isRequired,
-//   flickrImages: propTypes.string.isRequired,
-//   dragons: propTypes.string.isRequired,
-// };
