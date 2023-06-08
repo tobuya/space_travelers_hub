@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
-<div align="center">
-
-  <h1><b>Space Travelers Hub</b></h1>
-
-</div>
+[![Contributors](https://img.shields.io/github/contributors/tobuya/space_travelers_hub)](https://github.com/tobuya/space_travelers_hubgraphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/tobuya/space_travelers_hub)](https://github.com/tobuya/space_travelers_hubcommits/dev)
+[![Stargazers](https://img.shields.io/github/stars/tobuya/space_travelers_hub)](https://github.com/tobuya/space_travelers_hub/stargazers)
+[![Issues](https://img.shields.io/github/issues/tobuya/space_travelers_hub)](https://github.com/tobuya/space_travelers_hub/issues)
+[![License](https://img.shields.io/github/license/tobuya/space_travelers_hub)](https://github.com/tobuya/space_travelers_hub/blob/main/LICENSE)
 
 <!-- TABLE OF CONTENTS -->
 
@@ -16,7 +16,6 @@
     - [Key Features ](#key-features-)
       - [🔭 Future Features ](#-future-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [🚀 Project Presentation Video ](#-project-presentation-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Install](#install)
@@ -80,12 +79,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - <a href="https://space-travelers-hub-ihk3.onrender.com" target="_blank">Live Demo Link</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Project Presentation Video <a name="live-demo"></a>
-
-- <a href="#" target="_blank"> [Video Project Presentation Link](https://drive.google.com/file/d/1Ml2lHgZOSuCdUDgAh8o17QyBNclcId0r/view?usp=sharing) </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
