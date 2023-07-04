@@ -9,9 +9,9 @@ const Rocket = ({ rocket }) => {
     rocketName, description, flickrImages, reserved, id,
   } = rocket;
   return (
-    <div className="d-flex py-3 px-5 height gap-5">
-      <img src={flickrImages} className="w-25 h " alt="rockets img" />
-      <div className="w-75 gap-2">
+    <div className="d-flex m-3 height gap-3 mobile">
+      <img src={flickrImages} className="w-25" alt="rockets img" />
+      <div className="w-75 gap-1 rocket-info-responsive">
         <h2>{rocketName}</h2>
         <p>
           {
@@ -44,4 +44,5 @@ Rocket.propTypes = {
     id: PropTypes.string.isRequired,
   }).isRequired,
 };
+
 export default Rocket;
