@@ -21,3 +21,39 @@
 .height {
   height: 230px;
 }
+
+@media screen and (max-width: 768px) {
+  .mobile img {
+    max-width: 45%;
+    height: auto;
+    image-rendering: crisp-edges;
+    object-fit: cover;
+  }
+
+  .rocket-info-responsive {
+    gap: 0;
+    width: 55%;
+  }
+
+  .rocket-info-responsive h2 {
+    font-size: 1.5rem;
+  }
+
+  .rocket-info-responsive p {
+    font-size: 0.7rem;
+  }
+
+  .rocket-info-responsive p span {
+    padding: 0.25rem;
+    font-size: 0.575rem;
+    line-height: 1.2;
+    border-radius: 0.2rem;
+  }
+
+  .rocket-info-responsive button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
