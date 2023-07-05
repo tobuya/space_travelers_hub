@@ -20,16 +20,32 @@ const Mission = ({ mission }) => {
       <td>{description}</td>
       <td>
         {reserved ? (
-          <MDBBtn className="text-nowrap" size="sm" disabled>Active Member</MDBBtn>
+          <MDBBtn className="text-nowrap" size="sm" disabled>
+            Active Member
+          </MDBBtn>
         ) : (
-          <MDBBtn className="text-nowrap" color="dark" size="sm" disabled>NOT A MEMBER</MDBBtn>
+          <MDBBtn className="text-nowrap" color="dark" size="sm" disabled>
+            NOT A MEMBER
+          </MDBBtn>
         )}
       </td>
       <td>
         {reserved ? (
-          <button type="button" className="btn btn-outline-danger text-nowrap" onClick={toggleReservation}>Leave Mission</button>
+          <button
+            type="button"
+            className="btn btn-outline-danger text-nowrap"
+            onClick={toggleReservation}
+          >
+            Leave Mission
+          </button>
         ) : (
-          <button type="button" className="btn btn-outline-dark text-nowrap" onClick={toggleReservation}>Join Mission</button>
+          <button
+            type="button"
+            className="btn btn-outline-dark text-nowrap"
+            onClick={toggleReservation}
+          >
+            Join Mission
+          </button>
         )}
       </td>
     </tr>
