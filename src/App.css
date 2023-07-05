@@ -22,6 +22,40 @@
   height: 230px;
 }
 
+.socials {
+  display: flex;
+  gap: 5px;
+}
+
+.socials a {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+}
+
+.socials a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.dev-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .mobile img {
     max-width: 45%;
@@ -55,5 +89,9 @@
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 0.2rem;
+  }
+
+  .contact-section {
+    flex-direction: column;
   }
 }
