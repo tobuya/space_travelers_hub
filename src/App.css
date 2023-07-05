@@ -94,4 +94,14 @@
   .contact-section {
     flex-direction: column;
   }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile table {
+    width: 100%;
+  }
 }
