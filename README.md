@@ -66,12 +66,12 @@
 - **Book rockets**
 - **Join selected space missions**
 - **Join selected space dragons**
+- **Interactive and Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### 🔭 Future Features <a name="future-features"></a>
 
-- **Mobile version**
 - **Toggle modes according to times of the day**
 
 <!-- LIVE DEMO -->
