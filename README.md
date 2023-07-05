@@ -141,14 +141,14 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 👤 **Thomas Obuya**
 
-- GitHub: [@githubhandle](https://github.com/tobuya)
-- Twitter: [@twitterhandle](https://twitter.com/@MullerTheGreat1)
+- GitHub: [Tobuya](https://github.com/tobuya)
+- Twitter: [Tobuya](https://twitter.com/@MullerTheGreat1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/tobuya/)
 
 👤 **Bernabas Yosef**
 
-- GitHub: [@githubhandle](https://github.com/bernabasy)
-- Twitter: [@twitterhandle](https://twitter.com/@bernabasjosef)
+- GitHub: [Bernabasy](https://github.com/bernabasy)
+- Twitter: [Bernabasy](https://twitter.com/@bernabasjosef)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabas-yosef-74b571186)
 
 👤 **Outkarm Johnson**
