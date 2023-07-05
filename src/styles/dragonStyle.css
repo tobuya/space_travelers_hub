@@ -7,13 +7,13 @@
 .all-dragons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 10px;
+  gap: 1.2rem;
+  padding: 1.2rem;
 }
 
 .a-dragon {
   display: flex;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 .dragons-img {
@@ -28,4 +28,14 @@
   color: blueviolet;
   border-radius: 8px;
   text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .a-dragon {
+    flex-direction: column;
+  }
+
+  .dragons-img {
+    width: 100%;
+  }
 }
