@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from './Redux/store';
 import './App.css';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
 import MyProfile from './pages/MyProfile';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/dragons" element={<Dragons />} />
           <Route path="/my_profile" element={<MyProfile />} />
         </Routes>
+        <Footer />
       </Provider>
     </Router>
   );

@@ -7,8 +7,8 @@ const MyProfile = () => {
   const dragons = useSelector((state) => state.dragons.dragons);
   return (
     <>
-      <div className="d-flex">
-        <table className="table w-50 m-5">
+      <div className="d-flex gap-3 p-3 profile">
+        <table className="table w-50">
           <thead>
             <tr>
               <th>
@@ -27,7 +27,7 @@ const MyProfile = () => {
           </tbody>
         </table>
 
-        <table className="table w-50 m-5">
+        <table className="table w-50">
           <thead>
             <tr>
               <th>
@@ -45,7 +45,7 @@ const MyProfile = () => {
               ))}
           </tbody>
         </table>
-        <table className="table w-50 m-5">
+        <table className="table w-50">
           <thead>
             <tr>
               <th>

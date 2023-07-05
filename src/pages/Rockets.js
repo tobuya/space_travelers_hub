@@ -13,7 +13,7 @@ const Rockets = () => {
     }
   }, [dispatch, rockets.length]);
   return (
-    <div className="mt-3">
+    <div className="d-flex flex-column">
       {rockets.map((rocket) => (
         <Rocket key={rocket.id} rocket={rocket} />
       ))}

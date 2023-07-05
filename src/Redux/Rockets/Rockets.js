@@ -5,7 +5,7 @@ const RocketsAPI = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = [];
 const ADD_ROCKETS = 'rockets/ROCKETS';
-const RESREVD = 'reserved/rockets';
+const RESERVED = 'reserved/rockets';
 
 const addedRockets = createAsyncThunk(
   ADD_ROCKETS,
@@ -26,7 +26,7 @@ const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${ADD_ROCKETS}/fulfilled`:
       return [...state, ...action.payload];
-    case RESREVD:
+    case RESERVED:
       return state.map((rocket) => {
         if (rocket.id === action.payload) return { ...rocket, reserved: !rocket.reserved };
         return rocket;
@@ -37,7 +37,7 @@ const rocketReducer = (state = initialState, action) => {
 };
 
 export const toggleRockets = (id) => ({
-  type: RESREVD,
+  type: RESERVED,
   payload: id,
 });
 
