@@ -37,12 +37,26 @@
 
 ## 📸 Screenshots <a name="screenshot"></a>
 
-<p style="display: flex; flex-wrap: wrap; gap: 2px; width: 100%;">
-  <img src="./src/images/space_screenshot1.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot2.png" width="49.5%" height="auto" alt="screenshot"/>
-  <img src="./src/images/space_screenshot3.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot4.png" width="49.5%" height="auto" alt="screenshot" />
-</p>
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<div class="image-grid">
+  <img src="./src/images/space_screenshot1.png" alt="screenshot" />
+  <img src="./src/images/space_screenshot2.png" alt="screenshot" />
+  <img src="./src/images/space_screenshot3.png" alt="screenshot" />
+  <img src="./src/images/space_screenshot4.png" alt="screenshot" />
+</div>
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
