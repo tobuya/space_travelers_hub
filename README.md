@@ -38,10 +38,10 @@
 ## 📸 Screenshots <a name="screenshot"></a>
 
 <p style="display: flex; flex-wrap: wrap; gap: 3px;">
-  <img src="./src/images/space_screenshot1.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot2.png" width="49.5%" height="auto" alt="screenshot"/>
-  <img src="./src/images/space_screenshot3.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot4.png" width="49.5%" height="auto" alt="screenshot" />
+  <img src="./src/images/space_screenshot1.png" width="49.5%" height="auto" alt="screenshot" style="@media screen and (max-width: 767px) { width: 100%}"/>
+  <img src="./src/images/space_screenshot2.png" width="49.5%" height="auto" alt="screenshot" style="@media screen and (max-width: 767px) { width: 100%}"/>
+  <img src="./src/images/space_screenshot3.png" width="49.5%" height="auto" alt="screenshot" style="@media screen and (max-width: 767px) { width: 100%}"/>
+  <img src="./src/images/space_screenshot4.png" width="49.5%" height="auto" alt="screenshot" style="@media screen and (max-width: 767px) { width: 100%}"/>
 </p>
 
 
