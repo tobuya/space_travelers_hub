@@ -37,20 +37,12 @@
 
 ## 📸 Screenshots <a name="screenshot"></a>
 
-<div style="display: flex; flex-wrap: wrap; gap: 3px;">
-  <div style="width: 49.5%;">
-    <img src="./src/images/space_screenshot1.png" width="100%" height="100%" alt="screenshot" />
-  </div>
-  <div style="width: 49.5%;">
-    <img src="./src/images/space_screenshot2.png" width="100%" height="100%" alt="screenshot" />
-  </div>
-  <div style="width: 49.5%;">
-    <img src="./src/images/space_screenshot3.png" width="100%" height="100%" alt="screenshot" />
-  </div>
-  <div style="width: 49.5%;">
-    <img src="./src/images/space_screenshot4.png" width="100%" height="100%" alt="screenshot" />
-  </div>
-</div>
+<p style="display: flex; flex-wrap: wrap; gap: 3px;">
+  <img src="./src/images/space_screenshot1.png" width="49.5%" height="auto" alt="screenshot" />
+  <img src="./src/images/space_screenshot2.png" width="49.5%" height="auto" alt="screenshot"/>
+  <img src="./src/images/space_screenshot3.png" width="49.5%" height="auto" alt="screenshot" />
+  <img src="./src/images/space_screenshot4.png" width="49.5%" height="auto" alt="screenshot" />
+</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
