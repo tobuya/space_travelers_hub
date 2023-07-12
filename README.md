@@ -11,7 +11,6 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Space Travelers Hub ](#-space-travelers-hub-)
-  - [📸 Screenshots ](#-screenshots-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -34,15 +33,6 @@
 # 📖 Space Travelers Hub <a name="about-project"></a>
 
 >  Space Travelers Hub is a web application based on the real live data from the SpaceX API. This application will allow users to book rockets and join selected space missions.
-
-## 📸 Screenshots <a name="screenshot"></a>
-
-<p style="display: flex; flex-wrap: wrap; gap: 3px;">
-  <img src="./src/images/space_screenshot1.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot2.png" width="49.5%" height="auto" alt="screenshot"/>
-  <img src="./src/images/space_screenshot3.png" width="49.5%" height="auto" alt="screenshot" />
-  <img src="./src/images/space_screenshot4.png" width="49.5%" height="auto" alt="screenshot" />
-</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
