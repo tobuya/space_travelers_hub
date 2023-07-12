@@ -38,10 +38,10 @@
 ## 📸 Screenshots <a name="screenshot"></a>
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;">
-  <img src="./src/images/space_screenshot1.png" alt="screenshot" style="width: 50%; height: auto;"/>
-  <img src="./src/images/space_screenshot2.png" alt="screenshot" style="width: 50%; height: auto;"/>
-  <img src="./src/images/space_screenshot3.png" alt="screenshot" style="width: 50%; height: auto;"/>
-  <img src="./src/images/space_screenshot4.png" alt="screenshot" style="width: 50%; height: auto;"/>
+  <img src="./src/images/space_screenshot1.png" alt="screenshot" style="width: 49.8%; height: auto;"/>
+  <img src="./src/images/space_screenshot2.png" alt="screenshot" style="width: 49.8%; height: auto;"/>
+  <img src="./src/images/space_screenshot3.png" alt="screenshot" style="width: 49.8%; height: auto;"/>
+  <img src="./src/images/space_screenshot4.png" alt="screenshot" style="width: 49.8%; height: auto;"/>
 </div>
 
 
